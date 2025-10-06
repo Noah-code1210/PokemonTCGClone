@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer components {
+.list {
+  @apply flex items-center h-full uppercase z-1 outline-offset-[-3px] before:w-[50px] before:bg-[#deaf4f] before:bottom-[10px] before:left-[50%] before:content-[""]  before:h-0 before:absolute after:w-[50px] after:bg-[#deaf4f] after:bottom-[-1px] after:content-[''] after:h-[4px] after:left-[50%] after:absolute
+}
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,8 +20,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
