@@ -2,7 +2,10 @@
 
 @layer components {
 .list {
-  @apply flex items-center h-full uppercase z-1 outline-offset-[-3px] before:w-[50px] before:bg-[#deaf4f] before:bottom-[10px] before:left-[50%] before:content-[""]  before:h-0 before:absolute after:w-[50px] after:bg-[#deaf4f] after:bottom-[-1px] after:content-[''] after:h-[4px] after:left-[50%] after:absolute
+  @apply flex items-center h-full uppercase z-1 hover:text-[#deaf4f] transition-all duration-300  
+}
+.span {
+  @apply mr-1
 }
 }
 
@@ -28,5 +31,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
