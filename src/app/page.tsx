@@ -8,7 +8,10 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function Home() {
   return (
     <div>
-      <nav className="flex bg-black left-0 top-0 fixed w-full h-[84px] px-[15px] justify-between items-center">
+      <div className="w-full max-w-[1470px] h-[62px] bg-[#f5f5f5] flex justify-center items-center text-5xl font-bold">
+        images
+      </div>
+      <nav className="flex bg-black z-1 left-0 top-16 absolute w-full h-[84px] px-[15px] justify-between items-center">
         <div className="left-0 w-auto relative mr-auto">
           <Image src={Logo} width={125} height={10} alt="Logo" />
         </div>
