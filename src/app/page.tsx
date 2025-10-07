@@ -70,13 +70,14 @@ export default function Home() {
             <FaRegCircle className="text-[#e6e6e6]" />
           </button>
         </div>
-        <div className="w-full max-w-[1470px] h-[56px] bg-[#131415]">
-            <span className="flex justify-start text-white">
-              Left arrow
-            </span>
-            <span className="flex justify-end text-white">
-              Right arrow
-            </span>
+        <div className="flex items-center justify-between w-full max-w-[1470px] h-[56px] bg-[#131415]">
+          <span className="arrow-btn">
+            <MdOutlineKeyboardArrowRight className="rotate-[180deg] text-3xl text-black"/>
+          </span>
+          <span className="font-bold text-white text-xl">Mega Lucario ex</span>
+          <span className="arrow-btn ">
+            <MdOutlineKeyboardArrowRight />
+          </span>
         </div>
       </header>
     </div>

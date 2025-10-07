@@ -1,20 +1,23 @@
-@import "tailwindcss";  
+@import "tailwindcss";
 
 @layer components {
-.list {
-  @apply flex items-center h-full uppercase z-1 hover:text-[#deaf4f] transition-all duration-300  
-}
-.span {
-  @apply mr-1
-}
-.btn {
-  @apply rounded-full flex justify-center text-xl uppercase font-extrabold bg-white w-full  h-[57px] bg-linear-to-r items-center hover:drop-shadow-[0_0_8px]
-}
-.btn {
-  @theme {
-    --btn: "Oxanium", sans-serif
+  .list {
+    @apply flex items-center h-full uppercase z-1 hover:text-[#deaf4f] transition-all duration-300;
   }
-}
+  .span {
+    @apply mr-1;
+  }
+  .btn {
+    @apply rounded-full flex justify-center text-xl uppercase font-extrabold bg-white w-full  h-[57px] bg-linear-to-r items-center hover:drop-shadow-[0_0_8px];
+  }
+  .btn {
+    @theme {
+      --btn: "Oxanium", sans-serif;
+    }
+  }
+  .arrow-btn {
+    @apply w-full max-w-[56px] h-[56px] bg-[#deaf4f] flex items-center justify-center text-3xl text-black;
+  }
 }
 
 :root {
