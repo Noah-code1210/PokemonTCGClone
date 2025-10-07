@@ -8,10 +8,10 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function Home() {
   return (
     <div>
-      <div className="w-full max-w-[1470px] h-[62px] bg-[#f5f5f5] flex justify-center items-center text-5xl font-bold">
+      <div className="w-full max-w-[1470px] h-[70px] bg-[#f5f5f5] flex justify-center items-center text-5xl font-bold">
         images
       </div>
-      <nav className="flex bg-black z-1 left-0 top-16 absolute w-full h-[84px] px-[15px] justify-between items-center">
+      <nav className="flex bg-black z-1 left-0 top-18 absolute w-full h-[84px] px-[15px] justify-between items-center">
         <div className="left-0 w-auto relative mr-auto">
           <Image src={Logo} width={125} height={10} alt="Logo" />
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
         </ul>
       </nav>
       <header className="bg-[url('../../assets/Lucario.jpg')] absolute bg-cover bg-center bg-no-repeat w-full max-w-[1470px] h-[654px] mt-21">
-        <div className="w-full max-w-[1470px] flex py-48 px-10">
+        <div className="w-full max-w-[1470px] flex py-46 px-10">
           <div className="w-full flex flex-col align-center pt-2 gap-y-7 max-w-[420px] items-center ">
             <Image src={Mega} width={430} height={200} alt="mega" />
             <button className="btn from-[#6ee7ff] to-[#37ffbc] max-w-[380px] hover:from-[#ffef14] hover:to-[#fbb064] hover:drop-shadow-[#ff8863]">
@@ -69,6 +69,14 @@ export default function Home() {
             Reduce motion
             <FaRegCircle className="text-[#e6e6e6]" />
           </button>
+        </div>
+        <div className="w-full max-w-[1470px] h-[56px] bg-[#131415]">
+            <span className="flex justify-start text-white">
+              Left arrow
+            </span>
+            <span className="flex justify-end text-white">
+              Right arrow
+            </span>
         </div>
       </header>
     </div>
