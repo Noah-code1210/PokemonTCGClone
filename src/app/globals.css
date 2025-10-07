@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss";  
 
 @layer components {
 .list {
@@ -6,6 +6,14 @@
 }
 .span {
   @apply mr-1
+}
+.btn {
+  @apply rounded-full flex justify-center text-xl uppercase font-extrabold bg-white w-full  h-[57px] bg-linear-to-r items-center hover:drop-shadow-[0_0_8px]
+}
+.btn {
+  @theme {
+    --btn: "Oxanium", sans-serif
+  }
 }
 }
 
