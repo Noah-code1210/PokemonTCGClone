@@ -4,6 +4,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FaRegCircle } from "react-icons/fa";
 import Mega from "../../assets/mega.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import LucarioCard from "../../assets/LucarioCard.png"
 
 export default function Home() {
   return (
@@ -52,8 +53,8 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-      <header className="bg-[url('../../assets/Lucario.jpg')] absolute bg-cover bg-center bg-no-repeat w-full max-w-[1470px] h-[654px] mt-21">
-        <div className="w-full max-w-[1470px] flex py-46 px-10">
+      <header className="bg-[url('../../assets/Lucario.jpg')] bg-size-[1150px] bg-black absolute bg-center bg-no-repeat w-full max-w-[1470px] h-[654px] mt-21">
+        <div className="w-full max-w-[1470px] flex justify-between py-46 px-10">
           <div className="w-full flex flex-col align-center pt-2 gap-y-7 max-w-[420px] items-center ">
             <Image src={Mega} width={430} height={200} alt="mega" />
             <button className="btn from-[#6ee7ff] to-[#37ffbc] max-w-[380px] hover:from-[#ffef14] hover:to-[#fbb064] hover:drop-shadow-[#ff8863]">
@@ -64,6 +65,14 @@ export default function Home() {
               <span className="pr-2">See card gallery</span>
               <MdOutlineKeyboardArrowRight className="text-3xl" />
             </button>
+          </div>
+          <div>
+            <Image 
+            src={LucarioCard}
+            width={300}
+            height={100}
+            alt="Card"
+            className="absolute right-30 top-30"/>
           </div>
           <button className="w-full max-w-[160px] h-[48px] rounded-[3px] gap-x-2 bg-black flex items-center justify-center text-white py-[10px] px-3 cursor-pointer absolute top-6 right-2">
             Reduce motion
